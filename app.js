@@ -34,9 +34,19 @@ Person.prototype.sayHello = function () {
 // let p1 = new Person("Hunter", 25);
 // p1.sayHello();
 
+Person.prototype.sleep = function () {
+  alert(
+    "Hello my name is " +
+      this.name +
+      "! I am going to go to sleep now, goodbye."
+  );
+};
 // Creating Object Instances
 
 let p1 = new Person("Jane", 29);
 let p2 = new Person("John", 28);
 p1.sayHello();
 p2.sayHello();
+
+p1.sleep();
+p2.sleep();
